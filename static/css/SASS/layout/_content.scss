@@ -1,0 +1,29 @@
+.content {
+  max-width: 1008px;
+  margin: 0 auto;
+  background: #fff;
+  &-main {
+    background: #fff;
+  }
+  &-banner {
+    display: block;
+    margin: 30px 0 45px 0;
+    &-image {
+      max-width:100%;
+    }
+  }
+  &-sidebar {
+    background: #fff;
+    padding: 25px;
+    border-left: 1px dashed #f0f4f5;
+    &-gray-triangle {
+      width: 0px;
+      height: 0px;
+      border-top: 10px solid #e3ebed;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      position: absolute;
+      margin: -25px 0 0 -35px;
+    }
+  }
+}

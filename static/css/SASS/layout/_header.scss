@@ -1,0 +1,124 @@
+body {
+  background: #e3ebed;
+}
+
+.header {
+  max-width: 1008px;
+  margin: 0 auto;
+  &-top {
+    height: 48px;
+    color: #ababab;
+    background: #fff;  
+    &-info {
+      height: 48px;
+      font: 14px / 44px $main-font;
+      white-space: nowrap;
+      padding: 0 0 0 33px;
+    }
+  }
+}
+
+.user-menu {
+  height: 48px;
+  list-style-type: none;
+  text-align: right;
+  &-item {
+    display: inline-block;
+    margin: 0 20px 0 4px;
+    &__link {
+      color: #ababab;
+      text-transform: uppercase;
+      font: 14px / 44px $main-font;
+    }
+    &__link:hover {
+      color: #4cb1ca;
+      text-decoration: none;
+    }
+  }
+}
+
+.header-main {
+  max-width: 1008px;
+  margin: 0 auto;
+  height: 200px;
+  &-logo {
+    width: 226px;
+    height: 47px;
+    display: inline-block;
+    margin: 65px 0 0 18px;
+    background: url("../img/sprite.png");
+  }
+  &-slogan {
+    font: 15px $main-font;
+    color: #f02b63;
+    display: block;
+    margin: -4px 0 0 18px;
+  }
+}
+
+.social {
+  list-style: none;
+  height: 50px;
+  margin: 81px -13px 0 0;
+  float: right;
+    &-item {
+    display: inline-block;
+    margin: 0 11px 0 0;
+    &__cover {
+      width: 49px;
+      height: 49px;
+      border-radius: 100%;
+      background: rgba(227, 235, 237, .8);
+      position: absolute;
+      display: block;
+    }
+    &__cover:hover {
+      display: none;
+    }
+    &__link1 {
+      display: block;
+      width: 49px;
+      height: 49px;
+      border-radius: 100%;
+      background: url("../img/sprite.png") -229px 0;
+    }
+    &__link1:hover &__cover{
+      display: none;  
+    }
+    &__link2 {
+      @extend .social-item__link1;
+      background: url("../img/sprite.png") -278px 0;
+    }
+    &__link3 {
+      @extend .social-item__link1;
+      background: url("../img/sprite.png") -327px 0;   
+    }
+    &__link4 {
+      @extend .social-item__link1;
+      background: url("../img/sprite.png") -376px 0;
+    }
+    &__link5 {
+      @extend .social-item__link1;
+      background: url("../img/sprite.png") -425px 0;
+    }
+  }
+  &-item:last-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .centering-x{
+    text-align: center;
+    margin: 0;
+    float: none;
+  }
+
+  .logo-centering {
+    margin: 40px 0 0; 
+  }
+
+  .slogan-position {
+    margin-bottom: 15px;
+  }
+}

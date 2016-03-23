@@ -1,0 +1,116 @@
+.main-header {
+  color: #7db122;
+  font: 18px $main-font;
+  text-transform: uppercase;
+}
+
+.main-products {
+  display: inline-block;
+  text-align: center;
+  &-item {
+    width: 196px;
+    height: 156px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 5px 0;
+    margin: 20px 20px 0 0;
+    &-photo {
+      max-width: 100%;
+      height: 80%;
+    }
+    &__title {
+      height: 26px;
+      background: #e8e8e8;
+      margin: 4px -5px 0;
+      padding: 0 8px 0 8px;
+      text-align: left;
+      color: #818181;
+      font: 14px / 26px $main-font;
+      display: block;
+      &-price {
+        color: #f02b63;
+        float: right;
+      }
+    }
+  }
+  &-item:hover {
+    text-decoration: none;
+    box-shadow: 0 0 3px rgba(0,0,0,.3)
+  }
+  &-item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+.discount-green {
+  border-radius: 100%;
+  width: 54px;
+  height: 54px;
+  display: block;
+  position: absolute;
+  background: #7db122;
+  color: #fff;
+  font: 19px / 50px $main-font;
+  margin: 65px 0 0 18px;    
+}   
+
+.discount-red {
+  @extend .discount-green;
+  background: #f02b63;
+  margin: 50px 0 0 35px;
+}
+
+.discount-blue {
+  @extend .discount-green;
+  background: #4cb1ca;
+  margin: 20px 0 0 100px;
+}
+
+.page-numbers {
+  height: 30px;
+  margin: 30px auto 40px; 
+  text-align: center;
+  &-item {
+    list-style: none;
+    display: inline-block;
+    &__link {
+      display: block;
+      border-radius: 100%;
+      background: transparent;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      font: 18px $main-font;
+      color: #8f8f8f;
+    }
+    &__link:hover {
+      background: #7db122;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.active-page {
+ @extend .page-numbers-item__link:hover;
+ 
+}
+
+@media (max-width: 1010px) {
+  .main-products-item:nth-child(3n+3) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-products-item:nth-child(3n+3) {
+    margin-right: 0px;
+  }  
+}
+
+@media (max-width: 673px) {
+  .main-products-item:nth-child(3n+3) {
+    margin-right: 20px;
+  }
+}

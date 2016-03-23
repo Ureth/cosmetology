@@ -1,0 +1,124 @@
+.header-nav {
+  min-height: 50px;
+}
+
+.nav-list {
+  background: #fff;
+  border-bottom: 5px solid #f02b63;
+  min-height: 45px;
+  &-item {
+    display: inline-block;
+    font: 18px / 33px $main-font;
+    text-transform: uppercase;
+    &__link {
+      padding: 0 35px;
+      height: 40px;
+      color: #1d1d1d;
+      display: block;
+      text-decoration: none;
+    }
+    &__link:hover {
+      text-decoration: none;
+      color: #f02b63;
+    }
+    &__link:hover .nav-triangle {
+      display: block;
+    }
+    &__cart {
+      color: #b6b6b6;
+    }
+    &__products {
+      color: #4cb1ca;
+    }
+    &__price {
+      color: #7db122;
+    }
+    &__down-btn{
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #e7e7e7;
+      border-radius: 100%;
+      position: relative;
+      top: 3px;
+      &-triangle{
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 7px solid #f02b63;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        margin: 4px 0 0 3px;
+      }
+    }
+  }
+  &-basket {
+    float: right;
+    display: inline-block;
+    font: 18px / 33px $main-font;
+    text-transform: uppercase;
+    margin: 0 30px 0 0;
+  }
+}
+
+.nav-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #f02b63;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  margin: 1px auto 0;
+  display: none
+}
+
+.active {
+  color: #f02b63;
+}
+
+.active .nav-triangle{
+  display: block;
+}
+
+.header-page-description {
+  font: 18px / 45px $main-font;
+  text-transform: uppercase;
+  color: #84a0aa;
+  height: 54px; 
+  &__title {
+    color: #4cb1ca;
+    padding: 0 0 0 34px;
+  }
+  &__divider {
+    display: inline-block;
+    margin: 0 29px 0 40px;
+  }
+  &__body {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .centering-x{
+    text-align: center;
+    margin: 0;
+    float: none;
+  }
+
+  .nav-position {
+    display: block;
+    text-align: center;
+    float: none;
+  }
+}
+
+@media (max-width: 915px) and (min-width: 768px){
+  .cart-adaptation {
+    display: block;
+    line-height: 15px;
+    margin:0;
+  }
+} 

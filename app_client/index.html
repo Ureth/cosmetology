@@ -7,14 +7,32 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <ul>
-       <li><a href="/about"> About me</a></li>
-       <li><a href="/contacts">Contacts</a></li>
-       <li><a href="/prices">Prices</a></li>
-       <li><a href="/">Home</a></li>
-       <li><a href="/services">Services</a></li>
-     </ul>   
+  <header class="header">
+    <div class="header__content">
+      <a href="" class="header-logo"></a>
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-list__item">
+            <a href="" class="header-navigation-list__link"></a>
+          </li>
+          <li class="header-navigation-list__item">
+            <a href="" class="header-navigation-list__link"></a>
+          </li>
+          <li class="header-navigation-list__item">
+            <a href="" class="header-navigation-list__link"></a>
+          </li>
+          <li class="header-navigation-list__item">
+            <a href="" class="header-navigation-list__link"></a>
+          </li>
+          <li class="header-navigation-list__item">
+            <a href="" class="header-navigation-list__link"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <div ng-view></div>
+
   <script src="/angular/angular.min.js"></script>
   <script src="/lib/angular-route.min.js"></script>
   <script src="angular/cosmetApp.min.js"></script>

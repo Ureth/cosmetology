@@ -12,6 +12,21 @@ function config ($routeProvider, $locationProvider) {
       controller: 'pricesCtrl',
       controllerAs: 'vm'
     })
+    .when('/services', {
+      templateUrl: 'services/services.view.html',
+      controller: 'servicesCtrl',
+      controllerAs: 'vm'
+    })
+    .when('/about', {
+      templateUrl: 'about/about.view.html',
+      controller: 'aboutCtrl',
+      controllerAs: 'vm'
+    })
+    .when('/contacts', {
+      templateUrl: 'contacts/contacts.view.html',
+      controller: 'contactsCtrl',
+      controllerAs: 'vm'
+    })            
     .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode(true);

@@ -7,6 +7,11 @@ function config ($routeProvider, $locationProvider) {
       controller: 'homeCtrl',
       controllerAs: 'vm'
     })
+    .when('/prices', {
+      templateUrl: 'prices/prices.view.html',
+      controller: 'pricesCtrl',
+      controllerAs: 'vm'
+    })
     .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode(true);

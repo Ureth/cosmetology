@@ -8,7 +8,7 @@ var ctrlPrices   = require('../controllers/prices');
 
 
 /* GET home page. */
-router.get('/', ctrlMain.index);
+router.get('/', ctrlMain.angularApp);
 
 /* GET contacts page */
 router.get('/contacts', ctrlContacts.contacts);

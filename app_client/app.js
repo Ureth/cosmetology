@@ -1,6 +1,6 @@
 angular.module('cosmetApp', ['ngRoute']);
 
-function config ($routeProvider) {
+function config ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'home/home.view.html',
@@ -8,8 +8,10 @@ function config ($routeProvider) {
       controllerAs: 'vm'
     })
     .otherwise({redirectTo: '/'});
+
+  $locationProvider.html5Mode(true);
 }
 
 angular
   .module('cosmetApp')
-  .config(['$routeProvider', config]);
+  .config(['$routeProvider', '$locationProvider', config]);

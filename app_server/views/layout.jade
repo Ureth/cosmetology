@@ -4,7 +4,10 @@ html(ng-app='cosmetApp')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    div(ng-view)
+      block content
 
     script(src='/angular/angular.min.js')
+    script(src='/lib/angular-route.min.js')
     script(src='/app.js')
+    script(src='/home/home.controller.js')

@@ -1,0 +1,61 @@
+.header {
+  background: $main-color;
+  &__content {
+    max-width: $default-width;
+    min-height: 100px;
+    margin: $centering;
+    background: $main-color;
+  }
+  &-logo {
+    float: left;
+    display: block;
+    height: 100px;
+    width: 270px;
+    position: relative;
+    top: 8px;
+    background: url("../img/logo.png") no-repeat;
+    @media (max-width: 992px) {
+      margin: $centering;
+      float: none;
+    }
+  }
+  &-navigation {
+    &-list {
+      @media (max-width: 992px) {
+        margin: $centering;
+        float: none;
+        text-align: center;
+      }
+      float: right;
+      &__item {
+        display: inline-block;
+      }
+      &__link {
+        display: block;
+        width: 100px;
+        height: 100px;
+        font: 25px / 91px "Open Sans Light", Arial;
+        text-align: center;
+        color: #fff;
+        transition: background .5s;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0px;
+          height: 80px;
+          display: block;
+          border-bottom: 4px solid #fff;
+          transition: width .5s;
+        }
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+          background: rgba(0, 0, 0, .15);
+        }
+        &:hover:before {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

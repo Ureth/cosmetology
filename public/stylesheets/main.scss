@@ -1,0 +1,20 @@
+@import 
+  "scss/vendors/bootstrap";
+
+@import
+  "scss/base/fonts",
+  "scss/base/reset";
+
+@import
+  "scss/abstracts/variables";
+
+@import
+  "scss/layout/header",
+  "scss/layout/footer";
+
+@import
+  "scss/pages/about",
+  "scss/pages/contacts",
+  "scss/pages/home",
+  "scss/pages/prices",
+  "scss/pages/services";

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "arsenal";
+  src: url("../fonts/arsenal-regular.woff2") format("woff2"),
+       url("../fonts/arsenal-regular.woff") format("woff"),
+       url("../onts/arsenal-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "arsenal-bold";
+  src: url("../fonts/arsenal-bold.woff2") format("woff2"),
+       url("../fonts/arsenal-bold.woff") format("woff"),
+       url("../onts/arsenal-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanscondlight.woff2") format("woff2"),
+       url("../fonts/opensanscondlight.woff") format("woff"),
+       url("../onts/opensanscondlight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;   
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensanscondensedbold.woff2") format("woff2"),
+       url("../fonts/opensanscondensedbold.woff") format("woff"),
+       url("../onts/opensanscondensedbold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;   
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../fonts/opensanscondlightitalic.woff2") format("woff2"),
+       url("../fonts/opensanscondlightitalic.woff") format("woff"),
+       url("../onts/opensanscondlightitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;   
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff"),
+       url("../onts/opensans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;   
+}

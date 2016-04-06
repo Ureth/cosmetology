@@ -3,36 +3,70 @@
 <head>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOSOS</title>
+  <title>Кияновская Карина. Косметолог</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
   <header class="header">
     <div class="header__content">
-      <a href="" class="header-logo"></a>
+      <a href="/" class="header-logo col-xs-12 col-sm-6"></a>
       <nav class="header-navigation">
-        <ul class="header-navigation-list">
+        <ul class="header-navigation-list col-sm-12 col-md-6">
           <li class="header-navigation-list__item">
-            <a href="" class="header-navigation-list__link"></a>
+            <a href="services" class="header-navigation-list__link">Услуги</a>
           </li>
           <li class="header-navigation-list__item">
-            <a href="" class="header-navigation-list__link"></a>
+            <a href="prices" class="header-navigation-list__link">Цены</a>
           </li>
           <li class="header-navigation-list__item">
-            <a href="" class="header-navigation-list__link"></a>
+            <a href="about" class="header-navigation-list__link">Обо мне</a>
           </li>
           <li class="header-navigation-list__item">
-            <a href="" class="header-navigation-list__link"></a>
-          </li>
-          <li class="header-navigation-list__item">
-            <a href="" class="header-navigation-list__link"></a>
+            <a href="contacts" class="header-navigation-list__link">Контакты</a>
           </li>
         </ul>
+        <div class="clear"></div>
       </nav>
     </div>
   </header>
+
   <div ng-view></div>
 
+  <footer class="footer">
+    <div class="footer__content">
+      <ul class="footer-contacts col-md-6 col-xs-12">
+        <li class="footer-contacts__item">
+          <span class="footer-contacts__telephone-icon"></span>
+          +38 063 062 30 35 | +38 097 444 94 77
+        </li>
+        <li class="footer-contacts__item">
+          <span class="footer-contacts__email-icon"></span>
+          ka_tro@mail.ru
+        </li>
+        <li class="footer-contacts__item">
+          <span class="footer-contacts__location-icon"></span>
+          Vinnitsa, Feride Plaza, 4 floor
+        </li>
+      </ul>
+      <div class="footer-social col-md-6 col-xs-12">
+        <h2 class="footer-social__header">Присоединяйся к нам:</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-list__item">
+            <a class="footer-social-list__vk-icon" href="">
+              <span class="footer-social-list__icon-cover"></span>
+            </a>
+          </li>
+          <li class="footer-social-list__item">
+            <a class="footer-social-list__fb-icon" href="">
+              <span class="footer-social-list__icon-cover"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright col-md-12 col-xs-12"></div>
+      <div class="clear"></div>
+    </div>
+  </footer>
   <script src="/angular/angular.min.js"></script>
   <script src="/lib/angular-route.min.js"></script>
   <script src="angular/cosmetApp.min.js"></script>

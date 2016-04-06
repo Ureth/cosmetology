@@ -1,0 +1,81 @@
+.footer {
+  background: #252525;
+  &__content {
+    max-width: $default-width;
+    min-height: 200px;
+    margin: $centering;
+  }
+  &-contacts {
+    margin-top: 40px;
+    list-style: none;
+    &__item {
+      height: 30px;
+      margin-bottom: 15px;
+      font: 14px $main-font, Arial;
+      cursor: default;
+      color: #a6a6a6;
+    }
+    &__telephone-icon {
+      display: block;
+      float: left;
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+      background: url("../img/sprite.png") 0 -165px;
+    }
+    &__email-icon {
+      width: 29px;
+      height: 20px;
+      background: url("../img/sprite.png") -24px -169px;
+
+      @extend .footer-contacts__telephone-icon;
+    }
+    &__location-icon {
+      width: 29px;
+      height: 24px;
+      background: url("../img/sprite.png") -53px -165px;
+
+      @extend .footer-contacts__telephone-icon ;
+    }
+  }
+  &-social {
+    margin-top: 45px;
+    &__header {
+      color: #a6a6a6;
+      text-align: center;
+      font: 20px $main-font, Arial;
+    }
+    &-list {
+      margin-top: 15px;
+      text-align: center;
+      &__item {
+        display: inline-block;
+        width: 50px;
+        overflow: hidden;
+        border-radius: 15px;
+      }
+      &__vk-icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url("../img/sprite.png") -50px -115px;
+      }
+      &__vk-icon:hover .footer-social-list__icon-cover{
+        display: none;
+      }
+      &__fb-icon {
+        background: url("../img/sprite.png") 0 -115px;
+  
+        @extend .footer-social-list__vk-icon;
+      }
+      &__icon-cover {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, .3);
+        margin-left: -25px; 
+      }
+    }
+  }
+}

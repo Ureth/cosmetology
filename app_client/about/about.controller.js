@@ -1,6 +1,6 @@
 angular
   .module('cosmetApp')
-  .controller('aboutCtrl', homeCtrl);
+  .controller('aboutCtrl', aboutCtrl);
 
 function aboutCtrl () {
   var vm = this;

@@ -12,9 +12,14 @@ function config ($routeProvider, $locationProvider) {
       controller: 'pricesCtrl',
       controllerAs: 'vm'
     })
-    .when('/services', {
-      templateUrl: 'services/services.view.html',
-      controller: 'servicesCtrl',
+    .when('/procedures', {
+        templateUrl: 'procedures/procedures.view.html',
+        controller: 'proceduresCtrl',
+        controllerAs: 'vm'
+      })
+    .when('/procedures/:procedureid', {
+      templateUrl: '/procedureDetail/procedureDetail.view.html',
+      controller: 'procedureDetailCtrl',
       controllerAs: 'vm'
     })
     .when('/about', {
@@ -26,7 +31,8 @@ function config ($routeProvider, $locationProvider) {
       templateUrl: 'contacts/contacts.view.html',
       controller: 'contactsCtrl',
       controllerAs: 'vm'
-    })            
+    })
+                
     .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode(true);

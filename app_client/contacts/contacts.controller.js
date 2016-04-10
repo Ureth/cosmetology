@@ -1,6 +1,6 @@
 angular
   .module('cosmetApp')
-  .controller('contactsCtrl', homeCtrl);
+  .controller('contactsCtrl', contactsCtrl);
 
 function contactsCtrl () {
   var vm = this;

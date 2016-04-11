@@ -2,9 +2,9 @@ angular
     .module('cosmetApp')
     .controller('proceduresCtrl', proceduresCtrl);
 
-proceduresCtrl.$inject = ['cosmetAppData'];
 
-function proceduresCtrl (cosmetAppData) {
+
+function proceduresCtrl () {
 
     var vm = this;
     vm.pageHeader = {
@@ -12,12 +12,4 @@ function proceduresCtrl (cosmetAppData) {
         strapline: 'Ya siju v procedures.controller.js'
     };
 
-    cosmetAppData
-        .success(function(data){
-            vm.data = {procedures: data}
-        })
-        .error(function (e) {
-            console.log(e);
-        });
-    vm.data = {procedures: cosmetAppData};
 }

@@ -1,3 +1,14 @@
-<div ng-repeat="procedure in vm.data.procedures" class="col-xs-12 list-group-item">
-    <h4><a href="procedures/{{ procedure._id }}">{{ procedure.title }}</a><small>&nbsp;</small></h4>
+<div class="procedures">
+  <h2 class="procedures__header">Что вас интересует?</h2>
+  <ul class="procedures-list">
+    <li class="procedures-list__item">
+      <a href="procedures/face" class="procedures-list__link">Косметология лица</a>
+    </li>
+    <li class="procedures-list__item">
+      <a href="procedures/body" class="procedures-list__link">Косметология тела</a>
+    </li>
+    <li class="procedures-list__item">
+      <a href="procedures/head" class="procedures-list__link">Косметология волос</a>
+    </li>
+  </ul>
 </div>

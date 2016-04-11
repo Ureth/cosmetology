@@ -6272,7 +6272,7 @@ th {
   max-width: 980px;
   margin: 0 auto; }
   .spotlite-services__item {
-    display: inline-block;
+    display: block;
     width: 300px;
     height: 300px;
     margin: 35px 35px 0 0;
@@ -6349,5 +6349,32 @@ th {
     color: #b92c4e;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
     line-height: 45px; }
+
+.procedures {
+  min-height: 500px; }
+  .procedures__header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #505050;
+    font: 25px "Open Sans",Arial;
+    margin: 100px 0; }
+  .procedures-list {
+    list-style: none; }
+    .procedures-list__link {
+      border: 3px solid #b92c4e;
+      color: #505050;
+      font: 18px/43px "Open Sans",Arial;
+      height: 50px;
+      margin: 0 auto 50px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 300px;
+      display: block;
+      transition: border .1s linear, color .1s linear; }
+      .procedures-list__link:hover {
+        text-decoration: none;
+        color: #b92c4e;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
+        line-height: 45px; }
 
 /*# sourceMappingURL=style.css.map */

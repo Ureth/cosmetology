@@ -1,12 +1,13 @@
-@import 
-  "scss/vendors/bootstrap";
+@import
+"scss/abstracts/variables";
+
+@import
+  "scss/vendors/bootstrap",
+  "scss/vendors/slick";
 
 @import
   "scss/base/fonts",
   "scss/base/reset";
-
-@import
-  "scss/abstracts/variables";
 
 @import
   "scss/layout/header",
@@ -14,7 +15,10 @@
 
 @import
   "scss/pages/about",
+  "scss/pages/diplomas",
   "scss/pages/contacts",
   "scss/pages/home",
   "scss/pages/prices",
+  "scss/pages/proceduresType",
+  "scss/pages/_proceduresDetail",
   "scss/pages/procedures";

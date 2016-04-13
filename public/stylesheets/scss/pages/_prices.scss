@@ -1,0 +1,20 @@
+.procedures-info {
+  width: 800px;
+  margin: 100px auto;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+  &__header {
+    background: rgba(232, 185, 196, .4);
+  }
+  &__row:nth-child(2n) {
+    background: #eee;
+  }
+  &__cell {
+    padding: 5px;
+    font: 18px "Open Sans";
+    text-align: center;
+    color: $font-color;
+    border: 1px solid #c6c6c6;
+  }
+}

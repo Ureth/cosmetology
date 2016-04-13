@@ -1,3 +1,16 @@
-<div ng-repeat="procedure in vm.data.procedures" class="col-xs-12 list-group-item">
-    <h4><a href="procedures/{{ procedure._id }}">{{ procedure.title }}</a><small>&nbsp;</small></h4>
+<div class="cover">
+  <div class="col-md-6 col-xs-12">
+    <div class="filter">
+      <h2 class="filter__title">Поиcк по названию процедуры</h2>
+      <input class="filter__input"  type="text" id="filter" name="filter" ng-model="textFilter" placeholder="Начните писать название процедуры"/>
+    </div>
+  </div>
+  <div class="col-md-6 col-xs-12">
+    <ul class="services-list" >
+      <li class="services-list__item" ng-repeat="procedure in vm.data.procedures | filter: textFilter">
+        <a class="services-list__link" href="procedures/face/{{ procedure._id }}">{{ procedure.title }}</a>
+      </li>
+    </ul>
+  </div>
 </div>
+<div class="clear"></div>

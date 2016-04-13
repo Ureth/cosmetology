@@ -1,30 +1,32 @@
 .procedures {
   min-height: 500px;
   &__header {
+    width: 300px;
+    margin: 100px auto;
+    font: 25px "Open Sans",Arial;
     text-align: center;
     text-transform: uppercase;
-    color: #505050;
-    font: 25px "Open Sans",Arial;
-    margin: 100px 0; 
+    color: $font-color;
+    border-left: 3px solid $main-color;
   }
   &-list {
     list-style: none;
     &__link {
-      border: 3px solid #b92c4e;
-      color: $font-color;
-      font: 18px/43px "Open Sans",Arial;
+      display: block;
+      width: 300px;
       height: 50px;
       margin: 0 auto 50px;
+      font: 18px/43px "Open Sans",Arial;
+      transition: border .1s linear, color .1s linear;
       text-align: center;
       text-transform: uppercase;
-      width: 300px;
-      display: block;
-      transition: border .1s linear, color .1s linear; 
+      color: $font-color;
+      border: 3px solid #b92c4e;
       &:hover {
+        line-height: 45px;
         text-decoration: none;
         color: $main-color;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
-        line-height: 45px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .3) inset;
       }
     }
   }

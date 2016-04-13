@@ -41,17 +41,17 @@
   &-social {
     margin-top: 45px;
     &__header {
-      color: #a6a6a6;
-      text-align: center;
       font: 20px $main-font, Arial;
+      text-align: center;
+      color: #a6a6a6;
     }
     &-list {
       margin-top: 15px;
       text-align: center;
       &__item {
         display: inline-block;
-        width: 50px;
         overflow: hidden;
+        width: 50px;
         border-radius: 15px;
       }
       &__vk-icon {
@@ -60,21 +60,21 @@
         height: 50px;
         background: url("../img/sprite.png") -50px -115px;
       }
-      &__vk-icon:hover .footer-social-list__icon-cover{
+      &__vk-icon:hover .footer-social-list__icon-cover {
         display: none;
       }
       &__fb-icon {
         background: url("../img/sprite.png") 0 -115px;
-  
+
         @extend .footer-social-list__vk-icon;
       }
       &__icon-cover {
         position: absolute;
         width: 50px;
         height: 50px;
+        margin-left: -25px;
         border-radius: 15px;
         background: rgba(0, 0, 0, .3);
-        margin-left: -25px; 
       }
     }
   }

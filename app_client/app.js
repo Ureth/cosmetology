@@ -1,4 +1,4 @@
-angular.module('cosmetApp', ['ngRoute']);
+angular.module('cosmetApp', ['ngRoute', 'ngSanitize']);
 
 function config ($routeProvider, $locationProvider) {
   $routeProvider
@@ -32,7 +32,7 @@ function config ($routeProvider, $locationProvider) {
       controller: 'proceduresHeadCtrl',
       controllerAs: 'vm'
     })
-    .when('/procedures/:procedureid', {
+    .when('/procedures/:type/:procedureid', {
       templateUrl: '/procedureDetail/procedureDetail.view.html',
       controller: 'procedureDetailCtrl',
       controllerAs: 'vm'
@@ -40,6 +40,11 @@ function config ($routeProvider, $locationProvider) {
     .when('/about', {
       templateUrl: 'about/about.view.html',
       controller: 'aboutCtrl',
+      controllerAs: 'vm'
+    })
+    .when('/about/diplomas', {
+      templateUrl: 'diplomas/diplomas.view.html',
+      controller: 'diplomasCtrl',
       controllerAs: 'vm'
     })
     .when('/contacts', {

@@ -1,32 +1,48 @@
 .about-me {
   max-width: 980px;
   margin: 40px auto;
-  height: content;
+  &__header {
+    margin-bottom: 20px;
+    font: 25px "Open Sans", Arial;
+  }
+  &__subheader {
+    font: 20px "Open Sans", Arial;
+    margin-bottom: 20px;
+  }
+  &-achievements {
+    list-style: url("../img/check.png");
+  }
+  &-biography {
+    list-style-type: upper-roman;
+    padding: 0 30px;
+    font: 16px "Open Sans", Arial;
+    color: #252525;
+  }
   &__photo {
-    max-width: 100%;
+    margin-bottom: 30px; 
   }
   &__description {
     padding: 0 30px;
-    color: #252525;
     font: 16px "Open Sans", Arial;
-    text-align: justify;
+    color: #252525;
   }
   &__diplomas {
     display: block;
     width: 200px;
     height: 50px;
     margin: 40px auto;
-    border: 3px solid $main-color;
-    text-align: center;
     font: 18px / 43px "Open Sans", Arial;
+    transition: border .1s linear, color .1s linear;
+    text-align: center;
     text-transform: uppercase;
     color: #252525;
-    transition: border .1s linear, color .1s linear;
+    border: 3px solid $main-color;
+    clear: both;
     &:hover {
+      line-height: 45px;
       text-decoration: none;
       color: $main-color;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
-      line-height: 45px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, .3) inset;
     }
   }
 }

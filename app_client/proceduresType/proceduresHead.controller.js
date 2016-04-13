@@ -1,3 +1,5 @@
+(function () {
+
 angular
     .module('cosmetApp')
     .controller('proceduresHeadCtrl', proceduresHeadCtrl);
@@ -5,13 +7,7 @@ angular
 proceduresHeadCtrl.$inject = ['cosmetAppDataHead'];
 
 function proceduresHeadCtrl (cosmetAppDataHead) {
-
     var vm = this;
-    vm.pageHeader = {
-        title: 'Procedury',
-        strapline: 'Ya siju v procedures.controller.js'
-    };
-
     cosmetAppDataHead
         .success(function(data){
             vm.data = {procedures: data}
@@ -21,3 +17,5 @@ function proceduresHeadCtrl (cosmetAppDataHead) {
         });
     vm.data = {procedures: cosmetAppDataHead};
 }
+
+})();

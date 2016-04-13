@@ -1,1 +1,5 @@
-<h1>Это страница с подробностями процедуры в приложении{{ vm.pageHeader.title }}</h1>
+<div class="current-procedure">
+    <h2 class="current-procedure__title">{{vm.data.procedures.title}}</h2>
+    <h3 class="current-procedure__duration">Продолжительность процедуры: {{vm.data.procedures.duration}}</h3>
+    <div class="current-procedure__description" ng-bind-html="vm.data.procedures.description | addHtmlLineBreaks"></div>
+</div>

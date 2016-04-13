@@ -20,9 +20,12 @@ app.set('views', path.join(__dirname, 'app_server', 'views'));
 app.set('view engine', 'jade');
 var appClientFiles = [
   'app_client/app.js',
+  'app_client/common/services/cosmetAppData.service.js',
   'app_client/common/services/cosmetAppDataFace.service.js',
   'app_client/common/services/cosmetAppDataBody.service.js',
   'app_client/common/services/cosmetAppDataHead.service.js',
+  'app_client/common/services/cosmetAppDataPrices.service.js',
+  'app_client/common/filters/addHtmlLineBreaks.filter.js',
   'app_client/home/home.controller.js',
   'app_client/prices/prices.controller.js',
   'app_client/procedures/procedures.controller.js',
@@ -30,6 +33,7 @@ var appClientFiles = [
   'app_client/proceduresType/proceduresBody.controller.js',
   'app_client/proceduresType/proceduresHead.controller.js',
   'app_client/about/about.controller.js',
+  'app_client/diplomas/diplomas.controller.js',
   'app_client/procedureDetail/procedureDetail.controller.js',
   'app_client/contacts/contacts.controller.js'
 ];
@@ -45,7 +49,7 @@ fs.writeFile('public/angular/cosmetApp.min.js', uglified.code, function (err){
 });
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'img','favicon(2).ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

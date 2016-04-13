@@ -7,26 +7,26 @@
     background: $main-color;
   }
   &-logo {
-    float: left;
-    display: block;
-    height: 100px;
-    width: 270px;
     position: relative;
     top: 8px;
+    display: block;
+    float: left;
+    width: 292px;
+    height: 100px;
     background: url("../img/logo.png") no-repeat;
     @media (max-width: 992px) {
-      margin: $centering;
       float: none;
+      margin: $centering;
     }
   }
   &-navigation {
     &-list {
+      float: right;
       @media (max-width: 992px) {
-        margin: $centering;
         float: none;
+        margin: $centering;
         text-align: center;
       }
-      float: right;
       &__item {
         display: inline-block;
       }
@@ -35,17 +35,17 @@
         width: 100px;
         height: 100px;
         font: 25px / 91px "Open Sans Light", Arial;
+        transition: background .5s;
         text-align: center;
         color: #fff;
-        transition: background .5s;
         &:before {
           content: "";
           position: absolute;
-          width: 0px;
-          height: 80px;
           display: block;
-          border-bottom: 4px solid #fff;
+          width: 0;
+          height: 80px;
           transition: width .5s;
+          border-bottom: 4px solid #fff;
         }
         &:hover {
           text-decoration: none;

@@ -2,8 +2,8 @@
   max-width: 980px;
   margin: 40px auto;
   &-data {
-    list-style: none;
     margin-top: 140px;
+    list-style: none;
     @media (max-width: 768px) {
       margin: 40px 0;
     }
@@ -11,9 +11,9 @@
       height: 30px;
       margin-bottom: 15px;
       font: 20px / 30px $main-font, Arial;
+      list-style: none;
       cursor: default;
       color: #252525;
-      list-style: none;
     }
     &__telephone-icon {
       display: block;
@@ -37,8 +37,5 @@
 
       @extend .footer-contacts__telephone-icon ;
     }
-  }
-  &__map {
-
   }
 }

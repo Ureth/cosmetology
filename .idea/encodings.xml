@@ -2,6 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app_client/home/home.controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app_client/procedureDetail/procedureDetail.view.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app_client/procedures/procedures.view.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app_client/proceduresType/proceduresType.view.html" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,16 @@
+.current-procedure {
+  width: 980px;
+  margin: 100px auto;
+  padding: 0 20px;
+  &__title {
+    margin: 20px 0;
+    font: 25px "Open Sans", Arial;
+  }
+  &__duration {
+    margin: 20px 0;
+    font: 18px "Open Sans", Arial;
+  }
+  &__description {
+    font: 18px "Open Sans", Arial;
+  }
+}

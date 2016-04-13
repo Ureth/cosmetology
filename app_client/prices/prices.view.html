@@ -1,5 +1,30 @@
-<h1>Тут у нас страница c ценами приложения {{ vm.pageHeader.title }}</h1>
-
-<div ng-repeat="procedure in vm.data.procedures">
-    <div>{{procedure}}}</div>
-</div>
+<table class="procedures-info">
+  <thead class="procedures-info__header">
+    <tr>
+      <td class="procedures-info__cell">
+        Название
+      </td>
+      <td class="procedures-info__cell">
+        Длительность
+      </td>
+      <td class="procedures-info__cell">
+        Цена
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="procedures-info__row" ng-repeat="info in vm.data.procedures">
+      <td class="procedures-info__cell">
+        <a href="procedures/{{info.type}}/{{info._id}}" class="procedures-info__link">
+          {{info.title}}
+        </a>
+      </td>
+      <td class="procedures-info__cell">
+        {{info.duration}}
+      </td>
+      <td class="procedures-info__cell">
+        {{info.price}}
+      </td>
+    </tr>
+  </tbody>
+</table>

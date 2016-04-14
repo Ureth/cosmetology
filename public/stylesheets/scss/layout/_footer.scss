@@ -59,6 +59,7 @@
       }
       &__vk-icon {
         display: block;
+        position: relative;
         width: 50px;
         height: 50px;
         background: url("../img/sprite.png") -50px -115px;
@@ -74,8 +75,8 @@
       &__icon-cover {
         position: absolute;
         width: 50px;
+        left: 0px;
         height: 50px;
-        margin-left: -25px;
         border-radius: 15px;
         background: rgba(0, 0, 0, .3);
       }

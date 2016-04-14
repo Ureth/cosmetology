@@ -6,15 +6,19 @@
 
 .filter {
   margin: 0 auto 40px;
-  width: 400px;
-  font: 18px "Open Sans";
+  padding: 0 5px;
+  max-width: 400px;
+  font: 18px $main-font, Arial;
 
   &__title {
-    font: 25px "Open Sans", Arial;
+    border-left: 3px solid $main-color;
+    padding-left: 5px;
+    font: 22px $main-font, Arial;
     margin-bottom: 10px;
   }
   &__input {
-    width: 400px;
+    width: 100%;
+    display: block;
     height: 40px;
     padding-left: 10px;
     border: 1px solid rgba(0,0,0,.4);
@@ -22,20 +26,20 @@
 }
 
 .services-list {
-  width:  400px;
+  max-width:  400px;
+  min-width: 290px;
   box-shadow: 0 0 2px #252525;
   margin: 0 auto 40px;
   list-style: none;
   &__item {
     border-bottom: 1px solid #e2b3be;
-    width: 400px;
     margin: 0 auto;
   }
   &__link {
     display: block;
 
     height: 40px;
-    font: 18px /40px "Open Sans", Arial;
+    font: 18px /40px $main-font, Arial;
     text-align: center;
     text-transform: uppercase;
     color: $font-color;

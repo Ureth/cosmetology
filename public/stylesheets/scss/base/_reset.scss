@@ -241,8 +241,8 @@ th {
 }
 
 .content {
-  min-height: 650px;
-  @media (min-width: 480px) {
+  min-height: 575px;
+  @media (max-width: 480px) {
 	min-height: 0;
   }
 }

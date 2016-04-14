@@ -6244,8 +6244,8 @@ th {
   clear: both; }
 
 .content {
-  min-height: 650px; }
-  @media (min-width: 480px) {
+  min-height: 575px; }
+  @media (max-width: 480px) {
     .content {
       min-height: 0; } }
 
@@ -6386,7 +6386,8 @@ th {
   .about-me__description {
     padding: 0 30px;
     font: 16px "Open Sans", Arial;
-    color: #252525; }
+    color: #252525;
+    margin-bottom: 40px; }
   .about-me__diplomas {
     display: block;
     width: 200px;
@@ -6408,7 +6409,7 @@ th {
 .slider {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   padding: 10px;
-  width: 500px;
+  max-width: 500px;
   margin: 40px auto; }
   .slider__img {
     height: auto;
@@ -6416,7 +6417,7 @@ th {
 
 .slider-navigation {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-  width: 500px;
+  max-width: 500px;
   margin: 40px auto; }
   .slider-navigation img {
     border: 1px solid rgba(0, 0, 0, 0.2); }
@@ -6440,6 +6441,9 @@ th {
       list-style: none;
       cursor: default;
       color: #252525; }
+      @media (max-width: 480px) {
+        .contacts-data__item {
+          font-size: 13px; } }
     .contacts-data__telephone-icon {
       display: block;
       float: left;
@@ -6615,30 +6619,34 @@ th {
 
 .filter {
   margin: 0 auto 40px;
-  width: 400px;
-  font: 18px "Open Sans"; }
+  padding: 0 5px;
+  max-width: 400px;
+  font: 18px "Open Sans", Arial; }
   .filter__title {
-    font: 25px "Open Sans", Arial;
+    border-left: 3px solid #b92c4e;
+    padding-left: 5px;
+    font: 22px "Open Sans", Arial;
     margin-bottom: 10px; }
   .filter__input {
-    width: 400px;
+    width: 100%;
+    display: block;
     height: 40px;
     padding-left: 10px;
     border: 1px solid rgba(0, 0, 0, 0.4); }
 
 .services-list {
-  width: 400px;
+  max-width: 400px;
+  min-width: 290px;
   box-shadow: 0 0 2px #252525;
   margin: 0 auto 40px;
   list-style: none; }
   .services-list__item {
     border-bottom: 1px solid #e2b3be;
-    width: 400px;
     margin: 0 auto; }
   .services-list__link {
     display: block;
     height: 40px;
-    font: 18px /40px "Open Sans", Arial;
+    font: 18px/40px "Open Sans", Arial;
     text-align: center;
     text-transform: uppercase;
     color: #505050; }

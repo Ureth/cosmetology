@@ -239,3 +239,10 @@ th {
 .clear {
 	clear: both;
 }
+
+.content {
+  min-height: 650px;
+  @media (min-width: 480px) {
+	min-height: 0;
+  }
+}

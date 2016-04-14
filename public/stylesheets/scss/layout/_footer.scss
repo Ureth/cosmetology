@@ -14,6 +14,9 @@
       font: 14px $main-font, Arial;
       cursor: default;
       color: #a6a6a6;
+      @media (max-width: 480px) {
+        font-size: 13px;
+      }
     }
     &__telephone-icon {
       display: block;

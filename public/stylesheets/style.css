@@ -6243,6 +6243,12 @@ th {
 .clear {
   clear: both; }
 
+.content {
+  min-height: 650px; }
+  @media (min-width: 480px) {
+    .content {
+      min-height: 0; } }
+
 .header {
   background: #b92c4e; }
   .header__content {
@@ -6309,6 +6315,9 @@ th {
       font: 14px "Open Sans", Arial;
       cursor: default;
       color: #a6a6a6; }
+      @media (max-width: 480px) {
+        .footer-contacts__item {
+          font-size: 13px; } }
     .footer-contacts__telephone-icon, .footer-contacts__email-icon, .footer-contacts__location-icon, .contacts-data__email-icon, .contacts-data__location-icon {
       display: block;
       float: left;
@@ -6486,9 +6495,12 @@ th {
     @media (max-width: 992px) {
       .video-poster {
         display: block; } }
+  @media (max-width: 768px) {
+    .video {
+      display: none; } }
 
 .spotlite__header {
-  width: 400px;
+  max-width: 400px;
   margin: 40px auto 10px;
   font: 25px "Open Sans", Arial;
   cursor: default;

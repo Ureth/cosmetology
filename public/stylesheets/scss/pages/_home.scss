@@ -47,11 +47,14 @@
       display: block;
     }
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .spotlite {
   &__header {
-    width: 400px;
+    max-width: 400px;
     margin: 40px auto 10px;
     font: 25px "Open Sans", Arial;
     cursor: default;

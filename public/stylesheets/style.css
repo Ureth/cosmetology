@@ -6645,7 +6645,7 @@ th {
     margin: 0 auto; }
   .services-list__link {
     display: block;
-    height: 40px;
+    min-height: 40px;
     font: 18px/40px "Open Sans", Arial;
     text-align: center;
     text-transform: uppercase;

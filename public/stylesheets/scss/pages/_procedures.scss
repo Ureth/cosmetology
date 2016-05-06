@@ -21,7 +21,7 @@
       text-align: center;
       text-transform: uppercase;
       color: $font-color;
-      border: 3px solid #b92c4e;
+      border: 3px solid $main-color;
       &:hover {
         line-height: 45px;
         text-decoration: none;

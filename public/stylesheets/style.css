@@ -6250,12 +6250,12 @@ th {
       min-height: 0; } }
 
 .header {
-  background: #b92c4e; }
+  background: #D94E67; }
   .header__content {
     max-width: 980px;
     min-height: 100px;
     margin: 0 auto;
-    background: #b92c4e; }
+    background: #D94E67; }
   .header-logo {
     position: relative;
     top: 8px;
@@ -6364,6 +6364,9 @@ th {
         height: 50px;
         border-radius: 15px;
         background: rgba(0, 0, 0, 0.3); }
+  .footer-copyright {
+    text-align: center;
+    color: #959595; }
 
 .about-me {
   max-width: 980px;
@@ -6398,12 +6401,12 @@ th {
     text-align: center;
     text-transform: uppercase;
     color: #252525;
-    border: 3px solid #b92c4e;
+    border: 3px solid #D94E67;
     clear: both; }
     .about-me__diplomas:hover {
       line-height: 45px;
       text-decoration: none;
-      color: #b92c4e;
+      color: #D94E67;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset; }
 
 .slider {
@@ -6481,7 +6484,7 @@ th {
       text-shadow: 0 0 5px #000; }
       .video-cover__slogan-main-element {
         font-family: "Open Sans Bold";
-        color: #b92c4e; }
+        color: #D94E67; }
     .video-cover__divider {
       width: 75%;
       color: #fff; }
@@ -6512,7 +6515,7 @@ th {
   text-align: center;
   text-transform: uppercase;
   color: #505050;
-  border-left: 3px solid #b92c4e; }
+  border-left: 3px solid #D94E67; }
 .spotlite-services {
   max-width: 980px;
   margin: 0 auto; }
@@ -6588,11 +6591,11 @@ th {
   text-align: center;
   text-transform: uppercase;
   color: #505050;
-  border: 3px solid #b92c4e; }
+  border: 3px solid #D94E67; }
   .spotlite__more-services:hover {
     line-height: 45px;
     text-decoration: none;
-    color: #b92c4e;
+    color: #D94E67;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset; }
 
 .procedures-info {
@@ -6623,7 +6626,7 @@ th {
   max-width: 400px;
   font: 18px "Open Sans", Arial; }
   .filter__title {
-    border-left: 3px solid #b92c4e;
+    border-left: 3px solid #D94E67;
     padding-left: 5px;
     font: 22px "Open Sans", Arial;
     margin-bottom: 10px; }
@@ -6676,7 +6679,7 @@ th {
     text-align: center;
     text-transform: uppercase;
     color: #505050;
-    border-left: 3px solid #b92c4e; }
+    border-left: 3px solid #D94E67; }
   .procedures-list {
     list-style: none; }
     .procedures-list__link {
@@ -6689,11 +6692,11 @@ th {
       text-align: center;
       text-transform: uppercase;
       color: #505050;
-      border: 3px solid #b92c4e; }
+      border: 3px solid #D94E67; }
       .procedures-list__link:hover {
         line-height: 45px;
         text-decoration: none;
-        color: #b92c4e;
+        color: #D94E67;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset; }
 
 /*# sourceMappingURL=style.css.map */
